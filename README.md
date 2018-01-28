@@ -12,7 +12,7 @@ namespace SpencerMortensen\Autoloader;
 
 $project = __DIR__;
 
-$classes = array(
+$namespaces = array(
     'Example' => 'src',
     'Monolog' => 'vendor/monolog/monolog/src/Monolog',
     'Psr\\Log' => 'vendor/psr/log/Psr/Log'
@@ -20,5 +20,5 @@ $classes = array(
 
 require "{$project}/vendor/spencer-mortensen/autoloader/src/Autoloader.php";
 
-new Autoloader($project, $classes);
+new Autoloader($project, $namespaces);
 ```

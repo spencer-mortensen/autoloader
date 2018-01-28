@@ -29,11 +29,11 @@ class Autoloader
 {
 	private $projectDirectory;
 
-	public function __construct($projectDirectory, array $classes)
+	public function __construct($projectDirectory, array $namespaces)
 	{
 		$this->projectDirectory = $projectDirectory;
 
-		foreach ($classes as $namespace => $relativePath) {
+		foreach ($namespaces as $namespace => $relativePath) {
 			$this->map($namespace, $relativePath);
 		}
 	}
