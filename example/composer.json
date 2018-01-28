@@ -1,5 +1,6 @@
 {
     "require": {
+        "spencer-mortensen/autoloader": "~1.0",
         "monolog/monolog": "^1.23"
     }
 }
